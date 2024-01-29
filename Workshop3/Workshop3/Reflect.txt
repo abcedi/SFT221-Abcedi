@@ -1,0 +1,20 @@
+Workshop 3 Reflection
+Abcedi Ilacas
+NFF
+January 28 2024
+138180211
+
+To test the function for gathering customer information, especially to ensure that blank
+lines were not entered, I implemented a loop withing the promptInput() function. 
+This loop repeatedly requests input from the user until a non empty string is entered.
+The key here was to check if the first character in the input buffer is a newline character,
+which indicated that the Enter key was pressed without any input.
+
+If I had to test that the correct prompts were produced by the program for blank lines,
+I would approach it by simulating user inputs programmatically.
+This could involve writing a test script that sends both valid and invalid (empty) inputs to the function
+and then checks the output or the response of the function. The script would verify that for every invalid input,
+the program correctly reprompts the user for input. This kind of testing would likelt involve more advanced
+testing techniques, possibly intergrating an automation framework that can mimic user interactions more accurately.
+
+*/

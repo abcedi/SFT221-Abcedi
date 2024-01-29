@@ -133,6 +133,7 @@
     <ClInclude Include="Workshop3.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Reflect.txt" />
     <Text Include="Test Cases.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -4,27 +4,83 @@ NFF
 January 28 2024
 138180211
 
-getCustomerData()
+getCustomerData() Test Cases:
 
 Black Box Test Cases:
 1. Complete Valid Input
+Inputs - First Name: "Abcedi", Last Name: "Ilacas", Address: "123 Seneca St", City: "Toronto", Province: "ON", Postal Code "M2J 3C6"
+Expected Result - All fields accepted and stored correctly.
+Description - Validating complete and correct input.
+Error? - No
+
 2. Partial Input
+Inputs - First Name: "Abcedi", press Enter for other fields repeatedly. 
+Expected Result - Function reprompts for each empty field until valip input is provided.
+Description - Testing response to empty field inputs.
+Error? - Yes
+
 3. Invalid Postal Code
+Inputs - First Name: "Abcedi", Last Name: "Ilacas", Address: "123 Seneca St", City: "Toronto", Province: "ON", Postal Code "123abc"
+Expected Result - Function reprompts for valid postal code.
+Description - Testing response to invalid postal code input.
+Error? - Yes
 
 White Box Test Cases:
 1. Input Validation Loop
-2. Postal Code Validation Call
-3. Buffer Size Limit
+Inputs - Press enter for First Name. 
+Expected Result - Function reprompts for valid input.
+Description - Testing loop for empty input validation.
+Error? - Yes
 
-validPostalCode():
+2. Postal Code Validation Call
+Inputs - First Name: "Abcedi", Last Name: "Ilacas", Address: "123 Seneca St", City: "Toronto", Province: "ON", Postal Code "M2J3C6"
+Expected Result - Postal code accepted and formatted correctly.
+Description - Testing internal call to postal code validation function.
+Error? - No
+
+3. Buffer Size Limit
+Inputs - First Name: Very long string (over 99 characters) 
+Expected Result - Function accepts input without buffer overflow.
+Description - Testing buffer size handling.
+Error? - No
+
+validPostalCode() Test Cases:
 
 Black Box Test Cases:
 1. Correctly Formatted Postal Code
+Inputs - "M2J 3C6"
+Expected Result - Accepted and correctly formatted.
+Description - Valid postal code in uppercase with space.
+Error? - No
+
 2. Incorrectly Formatted Postal Code
+Inputs - "123ABC"
+Expected Result - Rejected as invalid.
+Description - Incorrectly formatted postal code.
+Error? - Yes
+
 3. Case and Space Variations
+Inputs - "m2j3c6" and "m2j 3c6"
+Expected Result - Acceoted and correctly formatted.
+Description - Lowecase postal codes with and without space.
+Error? - No
 
 White Box Test Cases:
 1. Character Validation Path
+Inputs - "M2J3C6" (valid)
+Expected Result - Accepted and correctly formatted.
+Description - Testing character validation with valid input.
+Error? - No
+
 2. Length Check
+Inputs - "M2J!C6" (invalid)
+Expected Result - Rejected as invalid.
+Description - Testing character validation with invalid input.
+Error? - Yes
+
 3. Final Format Check
+Inputs - "M2J3C" (too short) then "M2J3C6A" (too long)
+Expected Result - Rejected as invalid.
+Description - Testing postal code length validation.
+Error? - Yes
 

@@ -28,5 +28,8 @@
     <Text Include="Test Cases.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="Reflect.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
