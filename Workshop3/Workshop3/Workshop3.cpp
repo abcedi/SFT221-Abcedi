@@ -61,11 +61,13 @@ namespace seneca
 		customer.province = input;
 
 		do {
-			cout << "Enter your postal code: ";
-			fgets(input, 100, stdin);
+			promptInput("Enter your postal code: ", input, 100);
 			removeNewLine(input);
 			customer.postalCode = input;
-		} while (!validPostalCode(customer.postalCode));
+			if (!validPostalCode(customer.postalCode)) {
+				cout << "Invalid Entry: ";
+			}
+		}while (!validPostalCode(customer.postalCode));
 
 		return customer;
 	

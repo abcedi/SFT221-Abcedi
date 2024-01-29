@@ -1,0 +1,30 @@
+Workshop 3 Test Cases
+Abcedi Ilacas
+NFF
+January 28 2024
+138180211
+
+getCustomerData()
+
+Black Box Test Cases:
+1. Complete Valid Input
+2. Partial Input
+3. Invalid Postal Code
+
+White Box Test Cases:
+1. Input Validation Loop
+2. Postal Code Validation Call
+3. Buffer Size Limit
+
+validPostalCode():
+
+Black Box Test Cases:
+1. Correctly Formatted Postal Code
+2. Incorrectly Formatted Postal Code
+3. Case and Space Variations
+
+White Box Test Cases:
+1. Character Validation Path
+2. Length Check
+3. Final Format Check
+
