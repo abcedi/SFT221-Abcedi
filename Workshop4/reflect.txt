@@ -1,0 +1,28 @@
+Workshop 04 Reflection
+Abcedi Ilacas
+04/02/24
+SFT221NFF
+
+
+1)
+The most useful technique was logical analysis especially for the factorial function's condition.
+Unlike syntax highlighting or compiling errors, logical flaws require understanding the purpose and expected outcome of the code.
+This technique was more effective than others because it directly addressed the root cause of incorrect behavior, whereas other techniques, like syntax checking, would not catch logical errors that compile correctly but don't perform as intended.
+
+2)
+A) The maximum value for a signed 32-bit integer int is 2,147,483,647 and for a 64-bit double it's 1.7976931348623157 x 10^308.
+
+B) These limits are due to the fixed number of bits allocated for each data type which bounds the range of values they can represent.
+
+C) Exceeding an integers maximum value causes overflow wrapping around to negative values in signed integers due to binary representation and the finite space allocated.
+
+D) Floating-point variables use IEEE 754 format allocating bits for sign, exponent, and fraction, differing from integers' fixed precision and direct value representation.
+
+3)
+The default stack size for a program in visual studio is typically 1 MB.
+And the heap size is dynamically managed but can grow much larger, depending on system resources and the program's demands.
+Hitting the stack limit might cause a stack overflow error, especially with deep recursion or large local allocations.
+Increasing memory could solve problems related to insufficient heap space but not issues like integer overflow, as these are tied to the data type's inherent limits, not the amount of memory allocated.
+The stack and heap sizes are limited to ensure efficient resource use and prevent a single application from monopolizing system resources.
+
+ 
