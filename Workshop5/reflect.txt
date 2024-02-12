@@ -1,0 +1,26 @@
+Abcedi Ilacas
+138180211
+2024-02-11
+SFT221NFF Reflection
+
+1)
+The most effective debugger tool for this assignment was the use of breakpoints, especially when combined with the step through features Step Into, Step Over.
+This approach provided an interactive and immediate way to observe the program's state at critical points of execution. 
+It was def more useful than static code analysis or print statements because it allowed for real time inspection of variable states and control flow,
+which is crucial for diagnosing the logic errors that were present in the code.
+
+2)
+I did not utilize the conditional breakpoints or the memory window features. Conditional Breakpoints were not necessary because the bugs were syntactical and logical rather than conditional.
+Memory window wasn't used as the issues did not connect to memory managemen.
+Conditional breakpoints would be invaluable when dealing with more complex conditions that only cause issues under specific circumstances.
+The memory window would be essential for debugging low level memory operations or pointer related bugs.
+
+3)
+Based on my experience, using the debugger alone is the fastest method for finding bugs.
+It provides a controlled environment to dissect the code execution step by step and inspect the state at any given line.
+Print statements can become unwieldy with complex code, and combining the two can sometimes introduce more noise rather than clarity, slowing down the process.
+
+4)
+To test the program I started with the provided string and then created additional test cases that included strings with varying formats, such as multiple lines, different spacing, and mixed content of numbers and non-numeric words.
+I crafted these strings to challenge the parsing logic thoroughly.
+I'm confident in the robustness of the bug fixes as I systematically addressed each failure point revealed by these tests, and the final output matched the expected results for all test cases.
