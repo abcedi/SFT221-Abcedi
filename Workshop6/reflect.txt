@@ -1,0 +1,13 @@
+Abcedi Ilacas
+138180211
+2024-02-18
+SFT221NFF Reflection
+
+1)
+While working through the debugging process, I found assertions to be a bit more revealing in pinpointing bugs. Assertions immediately halt the program when a condition fails, which directly tells me something's wrong at that exact point in the code. The log file was super helpful for understanding the program flow and state over time, but assertions were like having a sharpshooter on the lookout for specific problems. I think assertions worked better because they directly address the logic I'm questioning, while logs give a broader picture which sometimes includes too much information.
+
+2)
+Debugging with log files has its charm. It's like keeping a diary of my program's behavior, which is great for complex issues that develop over time. But honestly, I prefer the debugger. It's more interactive and immediate. I can step through my code, line by line, peering into the program's state as I go. There might be times, like when working on systems where a debugger isn't available or on a live system where you can't pause execution, that log files are all I'd have. I could still debug effectively, but it would be slower compared to using a debugger since logs require more analysis after the fact.
+
+3)
+I grew more confident about squashing all the bugs as I saw my assertions pass one by one and the logs reflecting the expected flow. But betting my life savings? That's a high stake! I wouldn't wager all that unless I'd tested the code in every possible scenario I could think of. To reach that level of confidence, I'd need a suite of automated tests covering every function and edge case. Plus, I'd want a code review from a fresh pair of eyes. Knowing that both the tests and a fellow programmer had given the green light, I'd be much more willing to place that bet.
